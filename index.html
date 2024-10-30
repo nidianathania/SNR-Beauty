@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Studio - NailArt</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.cdnfonts.com/css/interstate-2" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SNR BEAUTY</div>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="ourservice.html">OUR SERVICE</a></li>
+                <li><a href="bookingnow.html">BOOKING NOW</a></li>
+                <!-- <li><a href="#">CONTACT</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero-section">
+        <div class="text-content">
+            <h1>NAIL<br>YOUR<br>STYLE</h1>
+            <button class="shop-now">SHOP NOW</button>
+            <p class="scroll-text">⬇ SCROLL FOR MORE</p>
+        </div>
+        <div class="image-content"></div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 >WELCOME TO SNR BEAUTY</h1>
+            <p>We provide you with the best information and services</p>
+            <!-- <a href="#" class="cta-button">Shop Now</a> -->
+        </div>
+        <div class="carousel-container">
+            <button class="prev-button">&#10094;</button>
+            <div class="carousel">
+                <div class="card">
+                    <img src="../SNR Web/images/Marble Elegance2.jpeg" alt="Nail Art 3">
+                    <div class="price-overlay">
+                        <p>Rp 250.000</p>
+                        <span>BIG SET - NAIL ART COLLECTION</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../SNR Web/images/nailart-1.jpg" alt="Nail Art 3">
+                    <div class="price-overlay">
+                        <p>Rp 200.000</p>
+                        <span>BIG SET - NAIL ART COLLECTION</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../SNR Web/images/pinknail.jpg" alt="Nail Art 3">
+                    <div class="price-overlay">
+                        <p>Rp 100.000</p>
+                        <span>BASIC SET - NAIL ART COLLECTION</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../SNR Web/images/codifyformatter (1).jpg" alt="Nail Art 3">
+                    <div class="price-overlay">
+                        <p>Rp 250.000</p>
+                        <span>GLITTER SET - NAIL ART COLLECTION</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../SNR Web/images/warna-warni.jpg" alt="Nail Art 3">
+                    <div class="price-overlay">
+                        <p>Rp 150.000</p>
+                        <span>COLORFUL SET - NAIL ART COLLECTION</span>
+                    </div>
+                </div>
+    
+    
+            </div>
+            <button class="next-button">&#10095;</button>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 SNR BEAUTY. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/snrnailart_beauty?igsh=anc4OW1wczI3Y2t1">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a>
+        </div>
+    </footer>
+    
+</body>
+</html>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const carousel = document.querySelector(".carousel");
+    const cards = document.querySelectorAll(".card");
+    const prevButton = document.querySelector(".prev-button");
+    const nextButton = document.querySelector(".next-button");
+
+    let currentIndex = 0;
+    const cardWidth = cards[0].offsetWidth; // Mengambil lebar kartu
+
+    function updateCarousel() {
+        carousel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+        console.log(`Current Index: ${currentIndex}`); // Debugging
+    }
+
+    nextButton.addEventListener("click", () => {
+        if (currentIndex < cards.length - 1) {
+            currentIndex++;
+            updateCarousel();
+        }
+    });
+
+    prevButton.addEventListener("click", () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+        }
+    });
+});
+
+
+</script>
