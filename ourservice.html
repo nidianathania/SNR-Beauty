@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -94,3 +95,101 @@
 
 
 </script>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Studio - NailArt</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.cdnfonts.com/css/interstate-2" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SNR BEAUTY</div>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="ourservice.html">OUR SERVICE</a></li>
+                <li><a href="bookingnow.html">BOOKING NOW</a></li>
+                <!-- <li><a href="#">CONTACT</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="service-banner">
+    </div>
+
+
+    <section class="our-services">
+        <h2>OUR SERVICE</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <img src="../SNR Web/images/manicure.jpg" alt="Manicure">
+                <h3>Manicure</h3>
+                <span class="price">Rp. 100.000</span>
+                <p>Perawatan manicure profesional untuk menjaga kebersihan, kesehatan, dan keindahan kuku tangan Anda. Dengan berbagai pilihan produk dan teknik, kami memastikan kuku Anda tampak menawan dan terawat.</p>
+            </div>
+            <div class="service-card">
+                <img src="../SNR Web/images/padicure.jpg" alt="Pedicure">
+                <h3>Pedicure</h3>
+                <span class="price">Rp. 150.000</span>
+                <p>Nikmati pengalaman pedicure mewah untuk kaki yang bersih, sehat, dan nyaman. Kami menawarkan layanan perawatan kuku kaki serta penghalusan kulit agar kaki Anda selalu terlihat segar</p>
+            </div>
+            <div class="service-card">
+                <img src="../SNR Web/images/nailart-design.jpg" alt="Nail Art Design">
+                <h3>Nail Art Design</h3>
+                <span class="price">Rp. 70.000</span>
+                <p>Ekspresikan diri Anda dengan desain nail art yang kreatif dan penuh gaya. Mulai dari desain minimalis hingga yang berani, kami menghadirkan beragam pilihan untuk mempercantik kuku sesuai kepribadian Anda</p>
+            </div>
+            <div class="service-card">
+                <img src="../SNR Web/images/gel polish.png" alt="Gel Polish">
+                <h3>Gel Polish</h3>
+                <span class="price">Rp. 50.000</span>
+                <p>Dapatkan tampilan kuku tahan lama dan berkilau dengan layanan Gel Polish kami. Tersedia berbagai warna dan gaya untuk Anda pilih, memastikan kuku Anda tetap cantik lebih lama</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 SNR BEAUTY. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/snrnailart_beauty?igsh=anc4OW1wczI3Y2t1">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a>
+        </div>
+    </footer>
+    
+</body>
+</html>
+
+<script>
+ document.addEventListener("DOMContentLoaded", () => {
+    const carousel = document.querySelector(".carousel");
+    const cards = document.querySelectorAll(".card");
+    const prevButton = document.querySelector(".prev-button");
+    const nextButton = document.querySelector(".next-button");
+
+    let currentIndex = 0;
+    const cardWidth = cards[0].offsetWidth + 15; // Adjusted with the margin-right on each card
+
+    function updateCarousel() {
+        carousel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
+
+    nextButton.addEventListener("click", () => {
+        if (currentIndex < cards.length - 1) {
+            currentIndex++;
+            updateCarousel();
+        }
+    });
+
+    prevButton.addEventListener("click", () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+        }
+    });
+});
+
+
+</script>
+>>>>>>> a9a1c2aa4184d2c97b5c96e6a15cccd1fce732c5

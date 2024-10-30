@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -110,3 +111,117 @@
 
 
 </script>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Studio - NailArt</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.cdnfonts.com/css/interstate-2" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SNR BEAUTY</div>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="ourservice.html">OUR SERVICE</a></li>
+                <li><a href="bookingnow.html">BOOKING NOW</a></li>
+                <!-- <li><a href="#">CONTACT</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Now</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="booking-now">
+        <h2>BOOKING NOW</h2>
+        <p>Book our best nail art services for a satisfying experience. Choose the service, time, and other details as per your requirements</p>
+        
+        <form class="booking-form">
+            <!-- Pilihan Layanan -->
+            <label for="service">Pilih Layanan</label>
+            <select id="service" name="service" required>
+                <option value="" disabled selected>Pilih Layanan</option>
+                <option value="manicure">Manicure</option>
+                <option value="pedicure">Pedicure</option>
+                <option value="nail-art-design">Nail Art Design</option>
+                <option value="gel-polish">Gel Polish</option>
+            </select>
+
+            <!-- Pilih Tanggal -->
+            <label for="date">Pilih Tanggal</label>
+            <input type="date" id="date" name="date" required>
+
+            <!-- Pilih Waktu -->
+            <label for="time">Pilih Waktu</label>
+            <input type="time" id="time" name="time" required>
+
+            <!-- Nama -->
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+
+            <!-- Nomor Telepon -->
+            <label for="phone">Nomor Telepon</label>
+            <input type="tel" id="phone" name="phone" placeholder="Nomor Telepon Anda" required>
+
+            <!-- Catatan Tambahan -->
+            <label for="notes">Catatan Tambahan</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Catatan khusus atau permintaan..."></textarea>
+
+            <!-- Tombol Submit -->
+            <button type="submit">BOOKING NOW</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 BEAUTY STUDIO. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/snrnailart_beauty?igsh=anc4OW1wczI3Y2t1">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a>
+        </div>
+    </footer>
+    
+</body>
+</html>
+
+<script>
+ document.addEventListener("DOMContentLoaded", () => {
+    const carousel = document.querySelector(".carousel");
+    const cards = document.querySelectorAll(".card");
+    const prevButton = document.querySelector(".prev-button");
+    const nextButton = document.querySelector(".next-button");
+
+    let currentIndex = 0;
+    const cardWidth = cards[0].offsetWidth + 15; // Adjusted with the margin-right on each card
+
+    function updateCarousel() {
+        carousel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
+
+    nextButton.addEventListener("click", () => {
+        if (currentIndex < cards.length - 1) {
+            currentIndex++;
+            updateCarousel();
+        }
+    });
+
+    prevButton.addEventListener("click", () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+        }
+    });
+});
+
+
+</script>
+>>>>>>> a9a1c2aa4184d2c97b5c96e6a15cccd1fce732c5

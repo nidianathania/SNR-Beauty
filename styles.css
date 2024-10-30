@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -431,3 +432,435 @@ footer {
 .social-links a:hover {
     text-decoration: underline;
 }
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #fdf8f7;
+    /* border-bottom: 1px solid #eaeaea; */
+    padding: 1rem 2rem;
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgb(224, 98, 135);
+    font-weight: 700;
+}
+
+.logo {
+    font-size: 45px;
+    font-weight: 900;
+    color: rgb(224, 98, 135);
+    font-style: italic
+}
+
+
+.hero {
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero-content h1{
+    font-size: 40px;
+    font-family: interstate;
+    font-weight: 800;
+    color: rgb(224, 98, 135);
+}
+
+.hero-content p{
+    margin-bottom: 20px;
+    color: 
+    rgb(100, 100, 100);
+}
+
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    width: 100vw;
+    height: 100vh;
+}
+
+.text-content, .image-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 2rem;
+}
+
+.text-content {
+    background-color: #fdf8f7;
+    flex-direction: column;
+    text-align: left;
+    padding: 0;
+    
+}
+
+.text-content h1 {
+    font-size: 120px;
+    font-family: interstate;
+    color: #8365a6;
+    line-height: 1;
+    font-weight: 900;
+    margin-left: 30px;
+    align-self: flex-start;
+}
+
+.shop-now {
+    font-family: interstate;
+    font-weight: 800;
+    font-size: 1rem;
+    background-color: #8365a6;
+    color: white;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-left: 30px;
+    align-self: flex-start;
+}
+
+.scroll-text {
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #d470a2;
+    margin-left: 30px;
+    /* text-align: left; */
+    align-self: flex-start;
+}
+
+.image-content {
+    background-image: url('../SNR Web/images/women-nailart.jpg  '); 
+    background-size: cover;
+    background-position: center;
+}
+
+
+.cta-button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.products {
+    padding: 2rem;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 0 auto; 
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.card {
+    position: relative;
+    min-width: 400px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.price-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.price-overlay p {
+    font-size: 1.2rem;
+    color: #e91e63;
+    font-weight: bold;
+}
+
+.price-overlay span {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.card:hover .price-overlay {
+    opacity: 1;
+}
+
+.prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: #d470a2;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+
+
+/* halaman our service */
+
+.service-banner {
+    background-image: url('../SNR Web/images/Ungu.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.service-banner h2 {
+    font-size: 2.5em;
+    color: white; /* Warna teks agar kontras dengan gambar */
+    margin: 0;
+}
+
+
+
+.our-services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #a794d3;
+}
+
+.our-services h2 {
+    font-family: interstate;
+    font-weight: 800;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1em;
+    color: #666;
+    margin-top: 15px;
+}
+
+.price{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+
+
+/* halaman booking now */
+/* Container utama booking */
+.booking-now {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.booking-now h2 {
+    font-size: 40px;
+    font-family: interstate;
+    font-weight: 800;
+    color: rgb(224, 98, 135);
+    margin-bottom: 10px;
+}
+
+.booking-now p {
+    font-size: 1em;
+    color: 
+    rgb(100, 100, 100);
+    margin-bottom: 30px;
+}
+
+/* Form booking */
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Label */
+.booking-form label {
+    font-weight: bold;
+    font-size: 1em;
+    color: #333;
+    text-align: left;
+}
+
+/* Input dan Select */
+.booking-form input[type="text"],
+.booking-form input[type="tel"],
+.booking-form input[type="date"],
+.booking-form input[type="time"],
+.booking-form select,
+.booking-form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Textarea khusus */
+.booking-form textarea {
+    resize: vertical;
+}
+
+/* Tombol Submit */
+.booking-form button {
+    font-family: interstate;
+    font-weight: 700;
+    background-color: rgb(224, 98, 135);
+    color: white;
+    font-size: 1em;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking-form button:hover {
+    background-color: rgba(246, 110, 151, 0.99);
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    color: #ff69b4;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+>>>>>>> a9a1c2aa4184d2c97b5c96e6a15cccd1fce732c5
